@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\SD69\goldbadge\BlueBarracudas\BlueBarracudas\bin\Debug\BlueBarracudas.exe.config
+C:\ElevenFiftyProjects\SD69\goldbadge\BlueBarracudas\BlueBarracudas\bin\Debug\BlueBarracudas.exe
+C:\ElevenFiftyProjects\SD69\goldbadge\BlueBarracudas\BlueBarracudas\bin\Debug\BlueBarracudas.pdb
+C:\ElevenFiftyProjects\SD69\goldbadge\BlueBarracudas\BlueBarracudas\obj\Debug\BlueBarracudas.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\SD69\goldbadge\BlueBarracudas\BlueBarracudas\obj\Debug\BlueBarracudas.exe
+C:\ElevenFiftyProjects\SD69\goldbadge\BlueBarracudas\BlueBarracudas\obj\Debug\BlueBarracudas.pdb
