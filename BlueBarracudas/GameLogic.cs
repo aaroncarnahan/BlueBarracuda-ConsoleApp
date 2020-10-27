@@ -5,45 +5,53 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace BlueBarracudas
 {
 	public class GameLogic
 	{
+
+		
 		private int[] _RandomGameSequence;
 		private int[] _UserGameSequence;
 
 		public void RunGame()
 		{
 
-			
-			DrawAssets draw = new DrawAssets();
-			Console.Clear();
-			Console.WriteLine(" --------------------------------------------------- BLUE BARRACUDA ----- by Aaron Carnahan, Stasi Higgins, & Evan Lacy");
-			draw.ComputerSquare1(0);
-			draw.ComputerSquare2(0);
-			draw.ComputerSquare3(0);
-			draw.ComputerSquare4(0);
-			draw.ComputerSquare5(0);
-			draw.ComputerSquare6(0);
-			draw.ComputerSquare7(0);
-			draw.ComputerSquare8(0);
-			draw.ComputerSquare9(0);
+			int running = 0;
 
-			int amount;
+			while (running < 3){
 
-			Console.WriteLine("How long would you like this to run?");
-			amount = Convert.ToInt32(Console.ReadLine());
-			SetPosition(0, 0);
-			ClearLine(0, 36);
-			SetPosition(0, 1);
-			ClearLine(0, 36);
+				DrawAssets draw = new DrawAssets();
+				Console.Clear();
+				Console.WriteLine(" --------------------------------------------------- BLUE BARRACUDA ----- by Aaron Carnahan, Stasi Higgins, & Evan Lacy");
+				draw.ComputerSquare1(0);
+				draw.ComputerSquare2(0);
+				draw.ComputerSquare3(0);
+				draw.ComputerSquare4(0);
+				draw.ComputerSquare5(0);
+				draw.ComputerSquare6(0);
+				draw.ComputerSquare7(0);
+				draw.ComputerSquare8(0);
+				draw.ComputerSquare9(0);
 
-			RandomGameSequence(amount);
-			UserInput(amount);
+				int amount;
 
-			DoTheyMatch();
+				Console.WriteLine("How long would you like this to run?");
+				amount = Convert.ToInt32(Console.ReadLine());
+				SetPosition(0, 0);
+				ClearLine(0, 36);
+				SetPosition(0, 1);
+				ClearLine(0, 36);
 
+				RandomGameSequence(amount);
+				UserInput(amount);
+
+				DoTheyMatch();
+
+				running = running + 1;
+			}
 
 		}
 
@@ -293,7 +301,7 @@ namespace BlueBarracudas
 			Console.SetCursorPosition(x, currentLineCursor);
 		}
 
-
+	
 
 	}
 }
